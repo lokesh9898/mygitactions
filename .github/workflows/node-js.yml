@@ -23,4 +23,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: NPM command installation
-      run: npm install
+      run: |
+        npm install
+        npm --version
